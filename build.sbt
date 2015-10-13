@@ -11,4 +11,4 @@ libraryDependencies ++= Seq(
 
 scalacOptions += "-feature"
 
-initialCommands in console := "import scalaz._, Scalaz._"
+initialCommands in console := "import scalaz._, Scalaz._, com.zmccoy._"
