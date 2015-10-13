@@ -20,4 +20,4 @@ trait UserGatheringOptions {
     } yield user
 }
 
-// We want to turn our failed computations into values
+// We want to turn our failed computations into values that mean something.
