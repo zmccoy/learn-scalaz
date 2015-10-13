@@ -1,0 +1,11 @@
+exit
+compile
+exit
+clean
+compile
+clean
+compile
+clean
+compile
+exit
+scala
