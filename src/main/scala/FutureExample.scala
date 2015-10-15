@@ -29,14 +29,6 @@ trait FutureDB {
    } yield user
    */
 
-  //Monads don't compose.
-
-  //Unleash the horrors
-  //You've written code like this.
-
-  //Not everything has a default.
-  //This is not sane.
-  //You are not sane.
 
 trait FutureDBImpl extends FutureDB {
 

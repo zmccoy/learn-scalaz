@@ -20,17 +20,3 @@ trait UserGatheringDisjunctions {
       user <- getUser(userId) \/> s"Couldn't find user for user id: ${userId}"
     } yield user
 }
-
-//Using Disjunctions we've controlled our side effects and done our errors through values
-
-//Disjunctions are a sum type.
-
-//Remember flatmap is sequencing, which means that we only get back the first error that happened.  Since the first computation is used in the next.
-
-/*
- scala> getUserByName("Zach")
-res7: scalaz.\/[String,com.zmccoy.User] = -\/(Couldn't find user's name: Zach)
-
-scala> getUserByName("Zach McCoy")
-res8: scalaz.\/[String,com.zmccoy.User] = \/-(User(UserId(1111),Zach McCoy))
- */
